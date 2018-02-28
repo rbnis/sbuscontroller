@@ -48,7 +48,7 @@ If you use this on any other platform please report back, so I can add it to thi
 
 ## Limitations
 
-Currently there are only 4 channels that get mapped as controller. In the near future I'll add more.
+Currently there are only the first 7 channels that get mapped as controller. Channel 1-6 get mapped as analog and channel 7 as digital button.
 
 ## Authors
 
