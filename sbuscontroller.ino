@@ -39,7 +39,7 @@ void setup() {
 void loop() {
   // Read SBUS channels
   sBus.FeedLine();
-  if (sBus.toChannels == 1){
+  if (sBus.toChannels == 1) {
     sBus.UpdateServos();
     sBus.UpdateChannels();
     sBus.toChannels = 0;
@@ -58,11 +58,11 @@ void loop() {
   Joystick.setYAxis(a);
   Joystick.setRxAxis(e);
   Joystick.setRyAxis(r);
-  
+
   // Write remaining SBUS channels to controller
   if (millis() >= gNextTime) {
     gNextTime = millis() + gcAnalogDelta;
-    
+
     Joystick.setZAxis(c5);
     Joystick.setRzAxis(c6);
     Joystick.setButton(0, map(c7, 172, 1811, 0, 1));
