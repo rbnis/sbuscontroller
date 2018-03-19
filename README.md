@@ -37,6 +37,8 @@ Just upload the `sbuscontroller.ino` file to your Arduino and your good to go.
 
 ## Compatibility
 
+### Only ATmega32U4 based arduinos (like the [arduino micro](https://store.arduino.cc/arduino-micro)) are supported, since they can be recognized as HID.
+
 This should work on any OS with USB-Support and with any (uninverted) SBUS receiver but this is what it's tested with.
 
 | Arduino   | Receiver | Operating System |
